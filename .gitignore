@@ -1,0 +1,6 @@
+*/.ipynb_checkpoints/*.ipynb
+*/*.pkl
+.DS_Store
+*.pdf
+*.gv
+*.png
