@@ -9,9 +9,12 @@ The following textbooks are used for topical references. The book short-form e.g
 ## Chapters
 
 ### 2. The Mathematical Building Blocks of Neural Networks
+2.1 shows the implementation of a neural network to solve the MNIST problem, a popular classification problem in the deep learning space.
+
+2.2 introduces concepts in neural networks, including tensors, tensor operations (element-wise, dot product, broadcasting, reshaping), mini-batch SGD and backpropogation that are useful to understand how the MNIST problem in 2.1 is solved.
 #### 2.1 - The MNIST Problem
 - `DLwP`
     - Chap 2.1
 #### 2.2 - Intoduction to Tensors & Tensor Operations
 - `DLwP`
-    - Chap 2.2, 2.3
+    - Chap 2.2, 2.3, 3.4, 2.5
