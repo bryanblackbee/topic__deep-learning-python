@@ -18,3 +18,17 @@ The following textbooks are used for topical references. The book short-form e.g
 #### 2.2 - Intoduction to Tensors & Tensor Operations
 - `DLwP`
     - Chap 2.2, 2.3, 3.4, 2.5
+    
+### 3. Getting Started with Neural Networks
+#### 3.1 - Anatomy of a Neural Network
+- `DLwP`
+    - Chap 3.1
+#### 3.2 - Classifying Movie Reviews: A Binary Classification Example
+- `DLwP`
+    - Chap 3.4
+#### 3.3 - Classifying newswires: A Multiclass Classification Example
+- `DLwP`
+    - Chap 3.5 
+#### 3.4 - Predicting House Prices: A Regression Example
+- `DLwP`
+    - Chap 3.6
