@@ -20,6 +20,13 @@ The following textbooks are used for topical references. The book short-form e.g
     - Chap 2.2, 2.3, 3.4, 2.5
     
 ### 3. Getting Started with Neural Networks
+3.1 introduces the key concepts of a neural network, including layers, networks, loss functions and optimisers.
+
+3.2 to 3.4 are worked examples in some machine learning examples 
+
+- a binary classification example (the **reviews** problem)
+- a multiclass classification example (the **reuters** problem) and 
+- a regression example (the **housing prices** problem)
 #### 3.1 - Anatomy of a Neural Network
 - `DLwP`
     - Chap 3.1
@@ -32,3 +39,15 @@ The following textbooks are used for topical references. The book short-form e.g
 #### 3.4 - Predicting House Prices: A Regression Example
 - `DLwP`
     - Chap 3.6
+    
+### 4. Fundamentals of Machine Learning
+Here, some key concepts of general machine learning are covered. They cover the overview for 
+- branches of ML
+- train-test split / k-fold cross-validation and Model Evaluation
+- Data Preprocessing for neural networks
+- Overfitting, Underfitting, Model Selection and Regularisation
+- The ML Workflow
+
+#### 4.1 - ML Fundamentals
+- `DLwP`
+    - Chap 4.1, 4.2, 4.3, 4.4, 4.5
