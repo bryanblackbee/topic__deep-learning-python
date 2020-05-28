@@ -50,4 +50,8 @@ Here, some key concepts of general machine learning are covered. They cover the 
 
 #### 4.1 - ML Fundamentals
 - `DLwP`
-    - Chap 4.1, 4.2, 4.3, 4.4, 4.5
+    - Chap 4.1, 4.2, 4.3
+    
+#### 4.2 - The ML Workflow
+- `DLwP`
+    - Chap 4.4, 4.5
