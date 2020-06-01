@@ -36,18 +36,25 @@ The following textbooks are used for topical references. The book short-form e.g
 - `DLwP`
     - Chap 3.5
 ##### 3.3b
-- `HandsML`
-    - Building an Image Classifier Using the Sequential API
+- `HandsML` 
+    - Chapter 10
+        - Building an Image Classifier Using the Sequential API
 #### 3.4 - Regression
 3.4 is an applied Regression (the **housing prices** problem) using the Keras implementation. There are both implmentations using Keras and `tf2.keras`. Since the problem involves a small dataset, this problem also involves k-fold validation.
 - `DLwP`
     - Chap 3.6
-- `HandsML`
-    - Building a Regression MLP Using the Sequential API
+- `HandsML` 
+    - Chapter 10
+        - Building a Regression MLP Using the Sequential API
 #### 3.5 - Building Complex and Dynamic Models
-    - Building Complex Models Using the Functional API
-    - Building Dynamic Models Using the Subclassing API
-    - Saving and Restoring a Model
+3.5 is a topic deep dive for TF, including building more complex and dynamic NN architectures, saving / loading a model, using callbacks during training and visualising training results using Tensorboard.
+- `HandsML` 
+    - Chapter 10
+        - Building Complex Models Using the Functional API
+        - Building Dynamic Models Using the Subclassing API
+        - Saving and Restoring a Model
+        - Using Callbacks
+        - Visualization using TensorBoard
     
 ### 4. Fundamentals of Machine Learning
 Here, some key concepts of general machine learning are covered. They cover the overview for 
