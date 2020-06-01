@@ -20,33 +20,33 @@ The following textbooks are used for topical references. The book short-form e.g
     - Chap 2.2, 2.3, 3.4, 2.5
     
 ### 3. Getting Started with Neural Networks
-3.1 introduces the key concepts of a neural network, including layers, networks, loss functions and optimisers.
-
-3.2 to 3.4 are worked examples in some machine learning examples 
-
-- 3.2 is a binary classification example (the **reviews** problem)
-- 3.3 is a multiclass classification example (the **reuters** problem)
-- 3.3b is a multiclass classification example (the **fashion** problem)
-- 3.4 is a regression example (the **housing prices** problem)
-
 #### 3.1 - Anatomy of a Neural Network
+3.1 introduces the key concepts of a neural network, including layers, networks, loss functions and optimisers.
 - `DLwP`
     - Chap 3.1
-#### 3.2 - Classifying Movie Reviews: A Binary Classification Example
+#### 3.2 - Binary Classification
+3.2 is a binary classification example (the **reviews** problem)
 - `DLwP`
     - Chap 3.4
-#### 3.3 - Classifying newswires: A Multiclass Classification Example
+#### 3.3 - Multiclass Classification
+3.3a is an applied Multiclass Classification on the **reuters** problem. This introuduces the Keras implementation to solve the problem.
+
+3.3b is an another applied Multiclass Classification on the **fashion** problem. This introduces training using `tf2.keras`.
+##### 3.3a
 - `DLwP`
     - Chap 3.5
+##### 3.3b
 - `HandsML`
     - Building an Image Classifier Using the Sequential API
-#### 3.4 - Predicting House Prices: A Regression Example
+#### 3.4 - Regression
+3.4 is an applied Regression (the **housing prices** problem) using the Keras implementation. There are both implmentations using Keras and `tf2.keras`. Since the problem involves a small dataset, this problem also involves k-fold validation.
 - `DLwP`
     - Chap 3.6
 - `HandsML`
     - Building a Regression MLP Using the Sequential API
-    - Building Complex Models usin Using the Functional API
-    - Building Dynamic Models usin Using the Subclassing API
+#### 3.5 - Building Complex and Dynamic Models
+    - Building Complex Models Using the Functional API
+    - Building Dynamic Models Using the Subclassing API
     - Saving and Restoring a Model
     
 ### 4. Fundamentals of Machine Learning
