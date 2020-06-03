@@ -71,3 +71,17 @@ Here, some key concepts of general machine learning are covered. They cover the 
 #### 4.2 - The ML Workflow
 - `DLwP`
     - Chap 4.4, 4.5
+
+### 5. Deep Learning for Computer Vision
+The **cats-vs-dogs** problem.
+#### 5.1
+- `DLwP`
+    - Chap 5.1
+
+#### 5.2
+- `DLwP`
+    - Chap 5.2
+    
+#### 5.3
+- `DLwP`
+    - Chap 5.3
