@@ -73,15 +73,20 @@ Here, some key concepts of general machine learning are covered. They cover the 
     - Chap 4.4, 4.5
 
 ### 5. Deep Learning for Computer Vision
-The **cats-vs-dogs** problem.
+
 #### 5.1
+5.1 introduces the convolutional neural network (CNN) and applies it to the **handwritten-digit** problem. It then explains the key concepts of the CNN including convolution layers and maxpooling layers.
 - `DLwP`
     - Chap 5.1
-
 #### 5.2
+5.2 introduces training a small CNN from scratch to tackle the **dogs-vs-cats** Kaggle problem. It also introduces the concepts of generating new images using data augmentation.
 - `DLwP`
     - Chap 5.2
-    
 #### 5.3
+5.3 introduces the concept of using a pretrained convnet to tackle the **dogs-vs-cats** problem. In particular, it introduces the method of feature extraction using a pretrained convolutional base, and finetuning the last layer(s) of the convolutional base before classification.
 - `DLwP`
     - Chap 5.3
+#### 5.4
+5.4 allows us to peek into what a convnet learns. In particular, activations of intermediate layers, studying the filters and looking at heatmaps of class activation.
+- `DLwP`
+    - Chap 5.4
