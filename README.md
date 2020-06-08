@@ -73,7 +73,6 @@ Here, some key concepts of general machine learning are covered. They cover the 
     - Chap 4.4, 4.5
 
 ### 5. Deep Learning for Computer Vision
-
 #### 5.1
 5.1 introduces the convolutional neural network (CNN) and applies it to the **handwritten-digit** problem. It then explains the key concepts of the CNN including convolution layers and maxpooling layers.
 - `DLwP`
@@ -90,3 +89,10 @@ Here, some key concepts of general machine learning are covered. They cover the 
 5.4 allows us to peek into what a convnet learns. In particular, activations of intermediate layers, studying the filters and looking at heatmaps of class activation.
 - `DLwP`
     - Chap 5.4
+
+### 6. Deep Learning for Text and Sequences
+
+#### 6.1
+6.1 explores using word embeddings to handle the **reviews** classification problem. It adds a preprocessing step called word embedding to learn semantic relationship between words. Furthermore, it introduces using pretrained word embeddings to learn from more generic semantic relationships, much like using a pretrained convnet in chapter 5.
+- `DLwP`
+    - Chap 6.1
