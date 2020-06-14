@@ -74,7 +74,8 @@ test_gen = generator(df_values,
 clear_session()
 model4 = Sequential()
 model4.add(GRU(32, dropout=0.1, recurrent_dropout=0.5, 
-               input_shape=(None, df_values.shape[-1])))
+               input_shape=(None, df_values.shape[-1]), 
+               return_sequences=True))
 model4.add(GRU(64, dropout=0.1, recurrent_dropout=0.5, 
                activation='relu'))
 model4.add(Dense(1))
