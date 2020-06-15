@@ -46,15 +46,6 @@ The following textbooks are used for topical references. The book short-form e.g
 - `HandsML` 
     - Chapter 10
         - Building a Regression MLP Using the Sequential API
-#### 3.5 - Building Complex and Dynamic Models
-3.5 is a topic deep dive for TF, including building more complex and dynamic NN architectures, saving / loading a model, using callbacks during training and visualising training results using Tensorboard.
-- `HandsML` 
-    - Chapter 10
-        - Building Complex Models Using the Functional API
-        - Building Dynamic Models Using the Subclassing API
-        - Saving and Restoring a Model
-        - Using Callbacks
-        - Visualization using TensorBoard
     
 ### 4. Fundamentals of Machine Learning
 Here, some key concepts of general machine learning are covered. They cover the overview for 
@@ -96,3 +87,20 @@ Here, some key concepts of general machine learning are covered. They cover the 
 6.1 explores using word embeddings to handle the **reviews** classification problem. It adds a preprocessing step called word embedding to learn semantic relationship between words. Furthermore, it introduces using pretrained word embeddings to learn from more generic semantic relationships, much like using a pretrained convnet in chapter 5.
 - `DLwP`
     - Chap 6.1
+    
+### 7. Advanced Deep Learning Best Practices    
+#### 7.1 - The Keras Functional API
+- `DLwP` 
+    - Chap 7.1
+- `HandsML` 
+    - Chapter 10
+        - Building Complex Models Using the Functional API
+        - Building Dynamic Models Using the Subclassing API
+        - Saving and Restoring a Model
+#### 7.2 - Callbacks & TensorBoard
+- `DLwP` 
+    - Chap 7.2
+- `HandsML` 
+    - Chapter 10
+        - Using Callbacks
+        - Visualization using TensorBoard    
