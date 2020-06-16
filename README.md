@@ -97,9 +97,9 @@ Here, some key concepts of general machine learning are covered. They cover the 
         - Building Complex Models Using the Functional API
         - Building Dynamic Models Using the Subclassing API
         - Saving and Restoring a Model
-#### 7.2 - Callbacks & TensorBoard
+#### 7.2 - Callbacks & TensorBoard, Advanced Techniques
 - `DLwP` 
-    - Chap 7.2
+    - Chap 7.2, 7.3
 - `HandsML` 
     - Chapter 10
         - Using Callbacks
