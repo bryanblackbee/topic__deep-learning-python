@@ -1,0 +1,6 @@
+!*.png
+*.h5
+*.csv
+*.txt
+/logs/*
+/workspace/*
