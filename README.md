@@ -103,4 +103,9 @@ Here, some key concepts of general machine learning are covered. They cover the 
 - `HandsML` 
     - Chapter 10
         - Using Callbacks
-        - Visualization using TensorBoard    
+        - Visualization using TensorBoard
+
+### 8. Generative Deep Learning
+#### 8.1 - Text Generation with LSTM
+- `DLwP` 
+    - Chap 8.1
