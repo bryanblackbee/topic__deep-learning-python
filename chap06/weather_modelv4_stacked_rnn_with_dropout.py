@@ -7,6 +7,7 @@ from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import (Flatten, Dense, SimpleRNN, LSTM, GRU)
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
 def ingest():
     # Read from CSV, keep only values
@@ -74,20 +75,28 @@ test_gen = generator(df_values,
 clear_session()
 model4 = Sequential()
 model4.add(GRU(32, dropout=0.1, recurrent_dropout=0.5, 
-               input_shape=(None, df_values.shape[-1]), 
-               return_sequences=True))
+               input_shape=(None, df_values.shape[-1]), return_sequences=True))
 model4.add(GRU(64, dropout=0.1, recurrent_dropout=0.5, 
                activation='relu'))
 model4.add(Dense(1))
-model4.compile(optimizer=RMSprop(), loss='mae',)
+model4.compile(optimizer=RMSprop(), loss='mae', metrics=['mae'])
 print(model4.summary())
 
 # Train
 #######
+m2_callbacks = [
+    # interrupt training when there is no more improvement.
+    # patience=2 means interrupt training when accuracy has stopped improving
+    # for more than 2 epochs. mae MUST be in the compile step in the metrics
+    EarlyStopping(monitor='mae', patience=2),
+    # saves the current weights after every epoch
+    # only overwrite the model file when val_loss has improved
+    ModelCheckpoint('weather__v4__stacked_rnn_with_dropout.h5', monitor='val_loss', save_best_only=True)]
 history4 = model4.fit(train_gen, 
   steps_per_epoch=500, 
   epochs=40, 
   validation_data=val_gen, 
+  callbacks=m2_callbacks,
   validation_steps=val_steps)
 metrics_df = pd.DataFrame(history4.history)
 metrics_df.to_csv('history4.csv', index=False)

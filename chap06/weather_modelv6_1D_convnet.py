@@ -7,6 +7,7 @@ from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import (Dense, MaxPooling1D, Conv1D, GlobalMaxPooling1D)
+from tensorflow.keras.callbacks import (EarlyStopping, ModelCheckpoint)
 
 def ingest():
     # Read from CSV, keep only values
@@ -82,15 +83,24 @@ model6.add(Conv1D(32, 5, activation='relu'))
 model6.add(GlobalMaxPooling1D())
 model6.add(Dense(1))
 
-model6.compile(optimizer=RMSprop(), loss='mae',)
+model6.compile(optimizer=RMSprop(), loss='mae', metrics=['mae'])
 print(model6.summary())
 
 # Train
 #######
+m2_callbacks = [
+            # interrupt training when there is no more improvement.
+                # patience=2 means interrupt training when accuracy has stopped improving
+                    # for more than 2 epochs. mae MUST be in the compile step in the metrics
+                        EarlyStopping(monitor='mae', patience=2),
+                            # saves the current weights after every epoch
+                                # only overwrite the model file when val_loss has improved
+                                    ModelCheckpoint('weather__v6.h5', monitor='val_loss', save_best_only=True)]
 history6 = model6.fit(train_gen, 
   steps_per_epoch=500, 
   epochs=20, 
   validation_data=val_gen, 
+  callbacks=m2_callbacks,
   validation_steps=val_steps)
 metrics_df = pd.DataFrame(history6.history)
 metrics_df.to_csv('history6.csv', index=False)
